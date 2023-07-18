@@ -37,4 +37,5 @@ steps:
     tag: 'Latest'
     title: 'Latest'
     addChangeLog: false
- 
+    assets: |
+      $(Build.ArtifactStagingDirectory)\bin\$(BuildConfiguration)\*.exe   
