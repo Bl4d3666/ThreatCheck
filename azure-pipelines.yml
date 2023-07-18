@@ -46,6 +46,6 @@ steps:
     title: 'Latest'
     addChangeLog: false
     assets: |
-      $(Build.ArtifactStagingDirectory)\ThreatCheck\ThreatCheck\bin\$(BuildConfiguration)\Release\ThreatCheck.exe   
+      $(Build.ArtifactStagingDirectory)\ThreatCheck\ThreatCheck\bin\$(BuildConfiguration)\ThreatCheck.exe   
     
       
