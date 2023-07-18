@@ -35,6 +35,7 @@ steps:
   inputs:
     connection: 'Bl4d3666'
     defaultVersionType: 'latest'
+    version: ''
     userRepository: 'Bl4d3666/ThreatCheck'    
     downloadPath: '$(System.ArtifactsDirectory)'
 
