@@ -38,3 +38,4 @@ steps:
     userRepository: 'Bl4d3666/ThreatCheck'
     defaultVersionType: 'Latest'
     downloadPath: '$(System.ArtifactsDirectory)'
+
