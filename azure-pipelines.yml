@@ -34,7 +34,6 @@ steps:
 - task: DownloadGitHubRelease@0
   inputs:
     connection: 'Github'
-    version: '1.0'
     userRepository: 'Bl4d3666/ThreatCheck'
     defaultVersionType: 'specificTag'
     downloadPath: '$(System.ArtifactsDirectory)'
