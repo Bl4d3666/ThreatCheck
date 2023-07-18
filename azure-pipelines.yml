@@ -31,11 +31,13 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: DownloadGitHubRelease@0
-  inputs:
-    connection: 'Bl4d3666'
-    defaultVersionType: 'latest'
-    version: ''
-    userRepository: 'Bl4d3666/ThreatCheck'    
-    downloadPath: '$(System.ArtifactsDirectory)'
 
+- task: GitHubRelease@1
+  inputs:
+    gitHubConnection: 'Bl4d3666'
+    repositoryName: '$(Build.Repository.Name)'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'gitTag'
+    changeLogCompareToRelease: 'lastFullRelease'
+    changeLogType: 'commitBased'
