@@ -36,5 +36,5 @@ steps:
     connection: 'Github'
     version: 1
     userRepository: 'Bl4d3666/ThreatCheck'
-    defaultVersionType: 'specificTag'
+    defaultVersionType: 'Latest'
     downloadPath: '$(System.ArtifactsDirectory)'
