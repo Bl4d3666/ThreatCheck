@@ -33,7 +33,7 @@ steps:
     configuration: '$(buildConfiguration)'
 - task: DownloadGitHubRelease@0
   inputs:
-    connection: 'Github'
+    connection: 'Bl4d3666'
     version: 1
     userRepository: 'Bl4d3666/ThreatCheck'
     defaultVersionType: 'Latest'
