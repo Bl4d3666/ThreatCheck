@@ -47,5 +47,6 @@ steps:
     addChangeLog: false
     assets: |
       $(Build.ArtifactStagingDirectory)\ThreatCheck\ThreatCheck\bin\$(BuildConfiguration)\ThreatCheck.exe   
+      $(Build.ArtifactStagingDirectory)\ThreatCheck\ThreatCheck\bin\$(BuildConfiguration)\CommandLine.dll
     
       
