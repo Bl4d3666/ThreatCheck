@@ -39,3 +39,4 @@ steps:
     addChangeLog: false
     assets: |
       $(Build.ArtifactStagingDirectory)\bin\$(BuildConfiguration)\*.exe   
+      
