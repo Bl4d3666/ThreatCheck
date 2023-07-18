@@ -38,6 +38,6 @@ steps:
     gitHubConnection: 'Github'
     repositoryName: '$(Build.Repository.Name)'
     tagSource: 'gitTag'
-    tag: release-1.0      
+    tagPattern: release-[0-9]*\S*
     assets: |
       $(Build.ArtifactStagingDirectory)/*.exe
