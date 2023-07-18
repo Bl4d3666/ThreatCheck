@@ -27,14 +27,15 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: GithubRelease@1 
-  displayName: 'Create GitHub Release'      
+- task: GitHubRelease@1
   inputs:
     gitHubConnection: 'Github'
-    action: create
     repositoryName: '$(Build.Repository.Name)'
-    tag: $(Build.SourceVersion)
-    tagSource: 'gitTag'
-    tagPattern: release-[0-9]*\S*
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'userSpecifiedTag'
+    tag: 'Latest'
+    title: 'Latest'
+    addChangeLog: false
     assets: |
-      $(Build.ArtifactStagingDirectory)/*.exe
+      $(Build.ArtifactStagingDirectory)/*.exe    
