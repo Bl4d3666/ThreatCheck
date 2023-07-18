@@ -36,7 +36,9 @@ steps:
   displayName: 'Create GitHub Release'      
   inputs:
     gitHubConnection: 'Github'
+    action: create
     repositoryName: '$(Build.Repository.Name)'
+    tag: $(Build.SourceVersion)
     tagSource: 'gitTag'
     tagPattern: release-[0-9]*\S*
     assets: |
